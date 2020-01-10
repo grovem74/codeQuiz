@@ -1,0 +1,19 @@
+.button {
+    border-radius: 5px;
+    border: 0;
+    margin: 3px;
+}
+
+.button:hover {
+    color: white;
+  }
+
+a, a:hover {
+    text-decoration: none;
+}
+
+#questions{
+    border: 0;
+}
+
+
