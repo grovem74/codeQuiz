@@ -16,4 +16,18 @@ a, a:hover {
     border: 0;
 }
 
+.hide {
+    opacity: "0";
+    border-radius: 5px;
+    border: 0;
+    margin: 3px;
+}
+
+.unhide {
+    opacity: "1.0";
+    border-radius: 5px;
+    border: 0;
+    margin: 3px;
+    background-color: #08f;
+}
 
