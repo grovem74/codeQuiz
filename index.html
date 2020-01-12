@@ -17,33 +17,36 @@
         <div class="row mb-3"></div>
 
         <div class="row mb-3">
-            <div class="col"></div>
-            <div class="col-2 text-center">
-                <a href="#">View High Scores</a>
+
+            <div id="viewHighScores" class="col-2 text-center">
+                <a id="viewHighScores" href="#">View High Scores</a>
             </div>
-            <div class="col-5"></div>
-            <div class="col-2 text-center">
+            <div class="col-8"></div>
+            <div id="timer" class="col-2 text-center">
                 Time: <span id="time">90</span>
             </div>
-            <div class="col"></div>
+
         </div>
 
         <div class="row">
             <div class="col"></div>
-            <div class="col-5">
+            <div class="col-6">
                 <div class="card" id="questions">
                     <div class="card-body">
-                        <h3 class="card-title" id="main">Coding Quiz Challenge</h3>
-                        <p class="card-text" id="rules">Try to answer the following code-related questions within the
-                            time limit. Keep in mind that incorrect answers will penalize your score/time by ten seconds!</p>
-                        <input type="button" id="answer1" class="bg-primary button" name="choice" value="A1"
-                            style="display: none">
-                        <input type="button" id="answer2" class="bg-primary button" name="choice" value="A2"
-                            style="display: none">
-                        <input type="button" id="answer3" class="bg-primary button" name="choice" value="A3"
-                            style="display: none">
-                        <input type="button" id="answer4" class="bg-primary button" name="choice" value="A4"
-                            style="display: none">
+                        <h3 class="card-title text-center" id="main">Coding Quiz Challenge</h3>
+                        <p class="card-text">Try to answer the following code-related questions within the
+                            time limit. Keep in mind that incorrect answers will penalize your score/time by ten
+                            seconds!</p>
+                        <div class="ml-5 mt-5">
+                            <input type="button" id="answer1" class="bg-primary button" name="choice" value="A1"
+                                style="display: none">
+                            <input type="button" id="answer2" class="bg-primary button" name="choice" value="A2"
+                                style="display: none">
+                            <input type="button" id="answer3" class="bg-primary button" name="choice" value="A3"
+                                style="display: none">
+                            <input type="button" id="answer4" class="bg-primary button" name="choice" value="A4"
+                                style="display: none">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -53,7 +56,7 @@
         <div class="row">
             <div class="col"></div>
             <div class="col-5 text-center">
-                <input type="button" id="start" class="bg-primary button" name="start" value="START QUIZ">
+                <input type="button" id="start" class="bg-primary button" name="start-button" value="START QUIZ">
             </div>
             <div class="col"></div>
         </div>
@@ -68,6 +71,27 @@
             <div class="col"></div>
         </div>
 
+        <div class="row">
+            <div class="col"></div>
+            <div class="col-5 text-center">
+                <div id="result4" style="display: none"></div>
+            </div>
+            <div class="col"></div>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col"></div>
+            <div class="col-5">
+                <div id="initials" class="input-group" style="display: none">
+                    <div class="input-group-prepend">
+                        <input id="init" type="text" aria-label="Initials" class="form-control" default="enter initials">
+                        <button class="btn bg-primary" type="button" id="submit">Submit</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col"></div>
+        </div>
+
         <div class="row mt-3">
             <div class="col"></div>
             <div class="col-5">
@@ -78,8 +102,41 @@
         </div>
     </div>
 
+    <div id="high-scores-list" class="container" style="display: none">
+        <div class="row mb-1"></div>
+
+        <div class="row">
+            <div class="col"></div>
+            <div class="col-5">
+                <table class="table">
+                    <thead class="bg-primary">
+                        <tr>
+                            <th scope="col" >Initials</th>
+                            <th class="text-right" scope="col" >Score</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td id="score-initials"></td>
+                            <td id="saved-scores"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col"></div>
+        </div>
+    
+        <div class="row">
+            <div class="col"></div>
+            <div class="col-5 text-center">
+                <input type="button" id="back" class="bg-primary button" name="back" value="BACK TO QUIZ">
+            </div>
+            <div class="col"></div>
+        </div>
+
+    </div>
+
     <script src="./script.js"></script>
     <script src="./questions.js"></script>
-</body>
 
 </html>
