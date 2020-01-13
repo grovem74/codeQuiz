@@ -4,6 +4,7 @@ var cardEl = document.querySelector(".card");
 var timerEl = document.querySelector("#timer");
 var timeEl = document.querySelector("#time");
 var mainEl = document.querySelector("#main");
+var secondEl = document.querySelector("#second");
 var answer1El = document.querySelector("#answer1");
 var answer2El = document.querySelector("#answer2");
 var answer3El = document.querySelector("#answer3");
@@ -51,6 +52,7 @@ startBtn.addEventListener("click", function () {
 
     startGame();
     startBtn.setAttribute("style", "display: none")
+    secondEl.setAttribute("style", "display: none")
     answer1El.setAttribute("style", "display: block");
     answer2El.setAttribute("style", "display: block");
     answer3El.setAttribute("style", "display: block");
@@ -266,16 +268,5 @@ viewHighScores.addEventListener("click", function () {
 
   //button to return to quiz
   backBtn.addEventListener("click", function () {
-    backBtn.setAttribute("style", "display: none"); 
-    highScoresListEl.setAttribute("style", "display: none");   
-    viewHighScores.setAttribute("style", "display: block");
-    timerEl.setAttribute("style", "display: block");
-    cardEl.setAttribute("style", "display: block");  
-    startBtn.setAttribute("style", "display: block");  
-    
-    mainEl.textContent = ("Coding Quiz Challenge");
-    answer1El.setAttribute("style", "display: none");
-    answer2El.setAttribute("style", "display: none");
-    answer3El.setAttribute("style", "display: none");
-    answer4El.setAttribute("style", "display: none");
+    open("index.html");
 })

@@ -13,16 +13,16 @@
 
 <body>
 
-    <div class="container">
+    <div class="container display">
         <div class="row mb-3"></div>
 
-        <div class="row mb-3">
+        <div class="row">
 
-            <div id="viewHighScores" class="col-2 text-center">
-                <a id="viewHighScores" href="#">View High Scores</a>
+            <div id="viewHighScores" class="col-3 text-center">
+                <a id="viewHighScores" href="#">High Scores</a>
             </div>
-            <div class="col-8"></div>
-            <div id="timer" class="col-2 text-center">
+            <div class="col-6"></div>
+            <div id="timer" class="col-3 text-center">
                 Time: <span id="time">90</span>
             </div>
 
@@ -30,14 +30,14 @@
 
         <div class="row">
             <div class="col"></div>
-            <div class="col-6">
+            <div class="col-10">
                 <div class="card" id="questions">
                     <div class="card-body">
                         <h3 class="card-title text-center" id="main">Coding Quiz Challenge</h3>
-                        <p class="card-text">Try to answer the following code-related questions within the
+                        <p class="card-text" id="second">Try to answer the following code-related questions within the
                             time limit. Keep in mind that incorrect answers will penalize your score/time by ten
                             seconds!</p>
-                        <div class="ml-5 mt-5">
+                        <div class="ml-5 mt-2">
                             <input type="button" id="answer1" class="bg-primary button" name="choice" value="A1"
                                 style="display: none">
                             <input type="button" id="answer2" class="bg-primary button" name="choice" value="A2"
@@ -92,10 +92,10 @@
             <div class="col"></div>
         </div>
 
-        <div class="row mt-3">
+        <div class="row">
             <div class="col"></div>
-            <div class="col-5">
-                <input type="button" id="next" class="bg-primary button text-center" name="next" value="NEXT QUESTION"
+            <div class="col-2">
+                <input type="button" id="next" class="bg-primary button text-center" name="next" value="NEXT"
                     style="display: none">
             </div>
             <div class="col"></div>
