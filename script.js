@@ -206,7 +206,7 @@ function endGame() {
     startBtn.setAttribute("style", "display: none");
     nextBtn.setAttribute("style", "display: none");
     resultEl.setAttribute("style", "display: none");
-    result2El.setAttribute("style", "display: none");
+    result2El.setAttribute("style", "display: block");
     result3El.setAttribute("style", "display: block");
     result4El.setAttribute("style", "display: block");
     initialsEl.setAttribute("style", "display: block");
