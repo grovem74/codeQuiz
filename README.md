@@ -1,6 +1,7 @@
 # codeQuiz
 
 ![Code Quiz](codeQuiz.JPG)
+![Code Quiz](codeQuiz2.JPG)
 
 The purpose of this site is to provide a timed quiz on coding fundamentals that stores high scores.
 
